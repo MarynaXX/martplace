@@ -1,2 +1,119 @@
 @import "vars";
 @import "global";
+@import "fonts";
+
+.header__top {
+  background-color: $grey;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+}
+
+.header__cta-btn {
+  margin-left: auto;
+  margin-right: 218px;
+  background-color: $blue;
+  padding: 4px 15px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 28px;
+    color: #fff;
+  }
+}
+
+.header__avatar-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 20px;
+}
+
+.header__profile {
+  &-name a {
+    color: $title;
+    font-weight: 500;
+  }
+  &-budget a {
+    color: $blue;
+    font-size: 15px;
+  }
+}
+
+.header__menu {
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+}
+
+.menu__list {
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: 33px;
+    }
+  }
+  a {
+    text-transform: uppercase;
+    color: $title;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 42px;
+  }
+}
+
+.search__inner-form {
+  max-width: 360px;
+  width: 100%;
+  position: relative;
+  input {
+    display: block;
+    width: 100%;
+    border: 1px solid #d9dfe5;
+    height: 45px;
+    border-radius: 30px;
+    padding: 0 90px 0 25px;
+    font-size: 15px;
+    line-height: 30px;
+    outline: none;
+    &::placeholder {
+      color: #898f96;
+    }
+  }
+  button {
+    background-color: $blue;
+    height: 45px;
+    width: 70px;
+    border: none;
+    border-radius: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    outline: none;
+    &:focus {
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.lnr-magnifier {
+  color: #fff;
+  position: absolute;
+  font-size: 15px;
+  line-height: 30px;
+  left: 28px;
+  top: 9px;
+}

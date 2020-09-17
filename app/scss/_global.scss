@@ -8,6 +8,7 @@ html {
 }
 a {
   display: inline-block;
+  text-decoration: none;
 }
 
 ul,
@@ -17,4 +18,15 @@ li {
   list-style: none;
 }
 body {
+  font-size: 16px;
+  line-height: 22px;
+  color: $text;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
